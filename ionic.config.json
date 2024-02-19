@@ -1,0 +1,7 @@
+{
+  "name": "IMGSELECT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
