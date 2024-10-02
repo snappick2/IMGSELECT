@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>{{girl | uppercase}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-img *ngFor="let img of girlSets[girl].text" [src]=img></ion-img>
+  <div class="fab-spacer"></div>
+  <ion-modal *ngIf="girlSets[girl].gallery && girlSets[girl].gallery.length !== 0" trigger="open-modal">
+    <ng-template>
+      <ion-content class="ion-padding">
+        <ion-img *ngFor="let img of girlSets[girl].gallery" [src]=img></ion-img>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+</ion-content>
+<ion-fab *ngIf="girlSets[girl].gallery && girlSets[girl].gallery.length !== 0" slot="fixed" horizontal="start" vertical="bottom">
+  <ion-fab-button id="open-modal">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>

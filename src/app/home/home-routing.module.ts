@@ -6,6 +6,13 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  }, {
+    path: 'view-girl',
+    loadChildren: () => import('../view-girl/view-girl.module').then( m => m.ViewGirlPageModule)
+  },
+  {
+    path: 'lj',
+    loadChildren: () => import('../lj/lj.module').then( m => m.LjPageModule)
   }
 ];
 
