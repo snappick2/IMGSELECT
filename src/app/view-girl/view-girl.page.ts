@@ -1419,6 +1419,14 @@ export class ViewGirlPage {
       extraZero: true,
       fileType: 'jpg',
       maxnum: 190
+    },
+    nh_training: {
+      imgSet: true,
+      prePath: '_nh',
+      text: [],
+      extraZero: false,
+      fileType: 'jpg',
+      maxnum: 21
     }
   }
 

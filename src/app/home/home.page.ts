@@ -93,6 +93,7 @@ export class HomePage {
     'nh_futcommercial',
     'nh_futbeachpolice',
     'nh_girlsinbloom',
+    'nh_training',
   ];
 
   constructor(
